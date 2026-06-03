@@ -38,7 +38,7 @@ export function useRegistrationForm() {
     setTouched({ name: true, email: true })
 
     if (!isFormValid) {
-      setSubmitMessage('Please fix the highlighted fields and submit again.')
+      setSubmitMessage('Please fix the required fields and submit again.')
       return
     }
 
