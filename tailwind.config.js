@@ -23,7 +23,7 @@ export default {
         },
         field: {
           DEFAULT: '#F9FAFF',
-          placeholder: '#6B7280',
+          placeholder: '#AAAAAA',
         },
       },
     },

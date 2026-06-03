@@ -68,13 +68,9 @@ export function RegistrationSection({
           )}
 
           <label className="mt-5 block text-[16px] font-medium text-black" htmlFor="company">
-            Company <span aria-hidden="true" className="text-danger">*</span>
-            <span className="sr-only"> (required)</span>
+            Company
           </label>
           <input
-            aria-describedby={visibleErrors.company ? 'company-error' : undefined}
-            aria-invalid={Boolean(visibleErrors.company)}
-            aria-required="true"
             autoComplete="organization"
             className={registrationInputClass}
             id="company"
@@ -85,11 +81,6 @@ export function RegistrationSection({
             type="text"
             value={values.company}
           />
-          {visibleErrors.company && (
-            <p className="mt-1 text-xs font-medium text-danger" id="company-error" role="alert">
-              {visibleErrors.company}
-            </p>
-          )}
 
           <label className="mt-5 block text-[16px] font-medium text-black" htmlFor="email">
             Email address <span aria-hidden="true" className="text-danger">*</span>

@@ -25,7 +25,6 @@ export function useRegistrationForm() {
 
   const visibleErrors: FormErrors = {
     name: touched.name ? errors.name : undefined,
-    company: touched.company ? errors.company : undefined,
     email: touched.email ? errors.email : undefined,
   }
 
@@ -36,7 +35,7 @@ export function useRegistrationForm() {
 
     if (isSubmitted) return
 
-    setTouched({ name: true, company: true, email: true })
+    setTouched({ name: true, email: true })
 
     if (!isFormValid) {
       setSubmitMessage('Please fix the highlighted fields and submit again.')
