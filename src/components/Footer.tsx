@@ -3,7 +3,7 @@ import { contactButtonClass } from '../constants/ui'
 export function Footer() {
   return (
     <footer
-      className="mt-16 border-t border-line-footer py-6 sm:mt-20 md:mt-[100px] md:py-8"
+      className="mt-16 border-t border-line-footer py-6 sm:mt-20 md:mt-[70px] md:py-8"
       id="contact"
     >
       <div className="sr-only" id="careers">
